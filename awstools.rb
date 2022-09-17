@@ -6,7 +6,7 @@ class Awstools < Formula
   def install
     system "python3", "-m", "pip", "install", "-r", "requirements.txt"
     system "mkdir", "-p", "~/awstools"
-    system "sh", "./helpers/macinstall.sh"
+    system "sh", "./helpers/macinstall.sh", "#{prefix}"
   end
 
   test do
